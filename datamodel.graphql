@@ -1,0 +1,12 @@
+type Human {
+  id: ID! @unique
+  name: String!
+  pets: [Pet!]!
+}
+
+type Pet {
+  id: ID! @unique
+  name: String!
+  species: String!
+  owner: Human!
+}
